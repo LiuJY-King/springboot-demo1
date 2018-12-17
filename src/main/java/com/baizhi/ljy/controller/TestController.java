@@ -20,6 +20,7 @@ public class TestController {
     @RequestMapping("select")
     public City test2() {
         City city = cityMapper.selectByPrimaryKey((long) 1);
+        System.out.print("update!");
         return city;
     }
 
